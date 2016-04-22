@@ -44,15 +44,18 @@
             <ion-option-button class="button-assertive"
                                ng-click="tasks.splice($inbox, 1)">BIN IT</ion-option-button>
             <!--change of mind or edit button is inseted here -->
-              <ion-option-button class="button-energized"
+              <ion-option-button class="button-balanced"
                                ng-click="edit(task)">Fix</ion-option-button>
                         
             {{task.title}}</ion-item>
 
           </ion-list>
-          <button class="button button-block button-icon" ng-click="newTask()"><i class="ion-compse icon"></i>
- Add Item
-</button>
+         
+          <button id="page-button1" style="font-weight:lighter;font-style:italic;color:#5CA52D;font-size:46px;border-radius:300px 300px 300px 300px;"
+        class="button button-dark button-large button-block icon ion-android-add-circle"ng-click="newTask()">Add Item!</button>
+          
+          
+           
       </ion-content>
     </ion-pane>
   </body>

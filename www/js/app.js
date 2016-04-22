@@ -5,9 +5,8 @@ angular.module('starter', ['ionic'])
 .controller('ToDoCtrl', function($scope, $ionicPopup) {
     $scope.tasks = 
         [
-        {title: "first", completed: true},
-        {title: "second", completed: true},
-        {title: "Third", completed: true},
+        {title: "Need CAKE!!!!!!", completed: true},
+        
         ];
    
    
