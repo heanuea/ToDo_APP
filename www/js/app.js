@@ -5,7 +5,7 @@ angular.module('starter', ['ionic'])
 .controller('ToDoCtrl', function($scope, $ionicPopup) {
     $scope.tasks = 
         [
-        {title: "Need CAKE!!!!!!", completed: true},
+        {title: "Go to GMIT!!!!", completed: true},
         
         ];
    
@@ -44,6 +44,21 @@ $scope.newTask = function()  {
             if (res !== undefined) task.title = $scope.data.response;
         })
     };//end of task
+    
+  
+    $scope.Info = function()  {
+    $ionicPopup.prompt({
+    title: "Info ",
+    template: "      ",
+    
+   
+ //above is where the you enter th pop up details    
+}).then(function(res) {
+    if (res) ({title: res, completed: false});
+})
+};//end of task 
+    
+    
     
     
 })//end of .controller
