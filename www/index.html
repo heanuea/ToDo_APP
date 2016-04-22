@@ -27,16 +27,25 @@
       
       <!--made list here -->
     <ion-pane>
-      <ion-header-bar class="bar-royal">
+      <ion-header-bar class="bar-dark">
         <h1 class="title">2Do</h1>
       </ion-header-bar>
       <ion-content>
           <ion-list>
+              
           <!--using ng repeat to go threw list or populate it  --->    
         <ion-item ng-repeat="task in tasks"
                   class="item-icon-right"
                   ng-class="{complete: task.completed}"
                   ng-click="task.completed = !task.completed">
+            
+   <!--this i got in ionic nice little slide left  feature than added button to delete it -->         
+            <i class="icon ion-ios-arrow-left"></i>
+            <ion-option-button class="button-assertive"
+                               ng-click="tasks.splice($inbox, 1)">BIN IT</ion-option-button>
+            <!--change of mind or edit button is inseted here -->
+              <ion-option-button class="button-energized"
+                               ng-click="edit(task)">Fix</ion-option-button>
                         
             {{task.title}}</ion-item>
 
