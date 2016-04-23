@@ -46,17 +46,7 @@ $scope.newTask = function()  {
     };//end of task
     
   
-    $scope.Info = function()  {
-    $ionicPopup.prompt({
-    title: "Info ",
-    template: "      ",
-    
-   
- //above is where the you enter th pop up details    
-}).then(function(res) {
-    if (res) ({title: res, completed: false});
-})
-};//end of task 
+  
     
     
     
